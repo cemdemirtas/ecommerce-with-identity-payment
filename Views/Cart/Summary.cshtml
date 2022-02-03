@@ -1,0 +1,6 @@
+﻿@model WebApplication5.Models.Cart
+@using WebApplication5.Models.Entity
+<a href="/Cart/Index">
+    &nbsp; [@Model.CartLines.Count] Adet
+    <span class="badge badge-warning"> @Model.Total().ToString("c")</span>
+</a>

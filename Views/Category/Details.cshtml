@@ -1,0 +1,22 @@
+﻿@using WebApplication5.Models.Entity
+@model IEnumerable<WebApplication5.Models.Entity.tbl_kategori>
+
+<h2>Details..</h2>
+
+@foreach (var item in Model)
+{
+<div class="row">
+    <div id=" sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                <li class="active"><a href="/Home/ProductList/@item.id">★@item.kategoriad★</a></li>
+            </ul>
+        </div>
+    </div>
+</div>}
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    @foreach (var item in Model)
+    {
+<li role="presentation"><a href="#kitchen" role="tab" id="kitchen-tab" data-toggle="tab" aria-controls="kitchen">@item.kategoriad</a></li>}
+
+</ul>

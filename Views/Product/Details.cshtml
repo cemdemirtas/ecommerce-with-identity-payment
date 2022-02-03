@@ -1,0 +1,33 @@
+﻿@model WebApplication5.Models.Entity.tbl_urunler
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.urunad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.urunad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_kategori.kategoriad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_kategori.kategoriad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.urunstok)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.urunstok)
+        </dd>
+    
+
+
+    </dl>
+</div>

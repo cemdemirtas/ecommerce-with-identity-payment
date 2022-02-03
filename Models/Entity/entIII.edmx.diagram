@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="120f9ee37c884639820433d460fc1bc2" Name="Diagram1">
+        <EntityTypeShape EntityType="mvcModel.AspNetRoles" Width="1.5" PointX="5.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.AspNetUserClaims" Width="1.5" PointX="10.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.AspNetUserLogins" Width="1.5" PointX="10.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.AspNetUsers" Width="1.5" PointX="8" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.tbl_kategori" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.tbl_marka" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.tbl_musteri" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.tbl_satis" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mvcModel.tbl_urunler" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="mvcModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_urunler_tbl_kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_urunler_tbl_kategori1" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_urunler_tbl_kategori2" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_urunler_tbl_kategori3" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_urunler_tbl_marka" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_satis_tbl_musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.FK_tbl_satis_tbl_urunler" ManuallyRouted="false" />
+        <AssociationConnector Association="mvcModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

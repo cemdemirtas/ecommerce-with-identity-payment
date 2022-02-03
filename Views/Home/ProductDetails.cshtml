@@ -1,0 +1,53 @@
+﻿@using WebApplication5.Models.Entity
+@model tbl_urunler
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ProductDetails</h2>
+
+<section>
+    <div class="modal-body">
+        <div class="col-md-5 modal_body_left">
+            <img src="~/Content/images/@Model.urunresim" alt=" " class="img-responsive">
+        </div>
+        <div class="col-md-7 modal_body_right">
+            <hr />
+            <h4>@Model.urunad</h4>
+            <p>
+                @Model.urunaciklama
+            </p>
+
+
+
+
+            <div class="modal_body_right_cart simpleCart_shelfItem">
+                <p><i class="item_price">@Model.urunfiyat ₺</i></p>
+                <form action="#" method="post">
+                    <button>
+                        @Html.ActionLink("Add To Card", "AddToCard", "Cart", new { id = @Model.urunid }, null)
+                    </button>
+                </form>
+                <br />
+            </div>
+
+            <div class="color-quality">
+                <ul>
+
+                    <li><a href="#" class="purple"><span></span></a></li>
+                    <li><a href="#" class="gray"><span></span></a></li>
+                    <li><a href="#" class="blue"><span></span></a></li>
+                    <li><a href="#" class="green"><span></span></a></li>
+                </ul>
+            </div>
+            <hr />
+            <form action="/Home/Product" method="post">
+                <button type="submit" class="w3ls-cart"> ← Ürünlere Geri Dön</button>
+            </form>
+
+        </div>
+        <div class="clearfix"> </div>
+
+    </div>
+</section>

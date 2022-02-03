@@ -1,0 +1,64 @@
+﻿@model WebApplication5.Models.Entity.tbl_urunler
+@using WebApplication5.Models.Entity
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<section class="content">
+    <h3>&emsp; &emsp;<font face="tahoma" size="5" color="red"> @Model.urunad </font>ürününü silmek istediğinize emin misiniz?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+
+            <dd>
+                <img src="~/Content/images/@Model.urunaciklama." width="100" height="100" />
+            </dd>
+
+            <dt>
+                Adı =
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.urunad)
+            </dd>
+
+            <dt>
+                Açıklama =
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.urunaciklama)
+            </dd>
+
+            <dt>
+                Fiyat =
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.urunfiyat)
+            </dd>
+
+            <dt>
+                Stok =
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.urunstok)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="container">
+                <div class="form-actions no-color">
+                    <input type="submit" value="Sil" class="btn btn-danger" /> |
+                    @Html.ActionLink("Ürünlere Dön", "Index", null, new { @class = "btn btn-warning" })
+                </div>
+            </div>}
+    </div>
+</section>
